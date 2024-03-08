@@ -27,7 +27,7 @@ export default function SignIn() {
     try {
       // setLoading(true);
       dispatch(signInStart());
-      console.log(loading);
+      // console.log(loading);
       const res = await fetch("/api/auth/signin", {
         method: "POST",
         headers: {
@@ -37,7 +37,7 @@ export default function SignIn() {
       });
 
       const data = await res.json();
-      console.log(data);
+      // console.log(data);
       if (data.success === false) {
         // setLoading(false);
         // setError(data.message);
