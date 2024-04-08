@@ -8,7 +8,7 @@ import cookieParser from "cookie-parser";
 import path from "path";
 
 dotenv.config();
-
+//connect to the database
 mongoose
   .connect(process.env.MONGODB)
   .then(() => {
